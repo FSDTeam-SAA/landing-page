@@ -1,0 +1,342 @@
+:root {
+    --primary-red: #ff002b;
+    --berlin-blue: #0044ff;
+    --berlin-green: #00a859;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ==================== HERO ==================== */
+.hero {
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    z-index: 10;
+    color: white;
+}
+
+.logohedar-img {
+    width: 120px;
+}
+
+.btn-top {
+    background-color: var(--primary-red);
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.hero-image-container {
+    height: 90vh;
+    overflow: hidden;
+    border-bottom-left-radius: 80px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Menu Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("/images/HEADER1.png") center/cover no-repeat;
+    transform: translateY(-100%);
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.menu-overlay.active {
+    transform: translateY(0);
+}
+
+.menu-content {
+    height: 100%;
+    padding: 50px 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo {
+    width: 120px;
+}
+
+.menu-links {
+    list-style: none;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.menu-links li {
+    margin: 40px 0;
+    cursor: pointer;
+}
+
+/* Main Content */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+}
+
+.text-side {
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+h1 {
+    font-size: 3.8rem;
+    line-height: 1.05;
+    font-weight: 800;
+    color: #222;
+}
+
+.btn-main {
+    background-color: var(--primary-red);
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: 25px 0;
+    display: inline-block;
+}
+
+.description {
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Pattern Side */
+.pattern-side {
+    background: url("/images/TEXTURA-CM.png");
+    position: relative;
+}
+
+.pattern-side::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/images/middle.gif") center/cover no-repeat;
+}
+
+/* Model Section */
+.model-section {
+    width: 95%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.model-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0 40px;
+    flex-wrap: wrap;
+}
+
+.tab {
+    padding: 10px 25px;
+    border-radius: 8px;
+    background: #cdd7ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tab.active {
+    background: #2046ff;
+}
+
+.model-carousel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #555;
+}
+
+.model-image {
+    width: 100%;
+    border-radius: 35px;
+    height: 480px;
+    object-fit: cover;
+}
+
+.model-stats {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stat {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.stat p { font-size: 0.75rem; }
+.stat h3, .stat h2 { font-weight: 700; }
+
+.cta-btn {
+    background: var(--primary-red);
+    color: white;
+    padding: 14px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Edge Section */
+.edge-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.percentage {
+    font-size: 110px;
+    font-weight: 300;
+    color: #08873c;
+    line-height: 1;
+}
+
+.edge-footer-text {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #08873c;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Amenities */
+.cards-wrapper {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 30px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+/* Popup */
+.appointment-popup {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    z-index: 1200;
+}
+
+.appointment-popup:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-card {
+    background: #ffbe1b;
+    border-radius: 28px;
+    padding: 22px 18px;
+    width: 90%;
+    max-width: 380px;
+    transform: scale(0.95);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.appointment-popup:target .popup-card {
+    transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    h1 { font-size: 3.2rem; }
+}
+
+@media (max-width: 768px) {
+    .content-grid { grid-template-columns: 1fr; }
+    .hero-image-container { height: 70vh; border-bottom-left-radius: 40px; }
+    .model-stats { position: relative; bottom: 0; transform: none; margin-top: 25px; }
+    .model-image { height: 380px; }
+    .edge-content { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .navbar { padding: 15px 5%; }
+    .logohedar-img { width: 100px; }
+    h1 { font-size: 2.4rem; }
+    .model-image { height: 320px; }
+}

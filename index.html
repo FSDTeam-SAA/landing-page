@@ -1,416 +1,446 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Berlin Puerta Poniente</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- <header class="hero">
-        <nav class="navbar">
-            <div >
-                <img src="/images/hedarLogo.png" alt="Berlin Logo" class="logohedar-img">
-            </div>
-            <div class="nav-right">
-                <span class="menu-text">MENÚ ▾</span>
-                <a href="#" class="btn-top">AGENDAR CITA</a>
-            </div>
-        </nav>
-        <div class="hero-image-container">
-            <video src="/images/envato_video.mp4" autoplay loop muted alt="Berlin Development Entrance" class="hero-img">
-        </div>
-    </header> -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="hero">
-    <nav class="navbar">
+      <nav class="navbar">
         <div>
-            <img src="/images/hedarLogo.png" alt="Berlin Logo" class="logohedar-img">
+          <img
+            src="/images/hedarLogo.png"
+            alt="Berlin Logo"
+            class="logohedar-img"
+          />
         </div>
 
         <div class="nav-right">
-            <span class="menu-text" onclick="openMenu()">MENÚ ▾</span>
-            <a href="#appointment-popup" class="btn-top">AGENDAR CITA</a>
+          <span class="menu-text" onclick="openMenu()">MENÚ ▾</span>
+          <a href="#appointment-popup" class="btn-top">AGENDAR CITA</a>
         </div>
-    </nav>
+      </nav>
 
-    <div class="hero-image-container">
-        <video src="/images/envato_video.mp4" autoplay loop muted class="hero-img"></video>
-    </div>
-</header>
+      <div class="hero-image-container">
+        <video
+          src="/images/envato_video.mp4"
+          autoplay
+          loop
+          muted
+          class="hero-img"
+        ></video>
+      </div>
+    </header>
 
-
-<!-- MENU OVERLAY -->
-<div class="menu-overlay" id="menuOverlay">
-
-    <div class="menu-content">
-
+    <!-- MENU OVERLAY -->
+    <div class="menu-overlay" id="menuOverlay">
+      <div class="menu-content">
         <div class="menu-header">
-            <img src="/images/hedarLogo.png" class="menu-logo">
+          <img src="/images/hedarLogo.png" class="menu-logo" />
 
-            <div class="menu-actions">
-                <span class="menu-close" onclick="closeMenu()">MENÚ ✕</span>
-                <a href="#appointment-popup" class="btn-top">AGENDAR CITA</a>
-            </div>
+          <div class="menu-actions">
+            <span class="menu-close" onclick="closeMenu()">MENÚ ✕</span>
+            <a href="#appointment-popup" class="btn-top">AGENDAR CITA</a>
+          </div>
         </div>
 
         <ul class="menu-links">
-            <li>MODELOS</li>
-            <li>AMENIDADES</li>
-            <li>COTIZADOR</li>
+          <li>MODELOS</li>
+          <li>AMENIDADES</li>
+          <li>COTIZADOR</li>
         </ul>
-
+      </div>
     </div>
 
-</div>
-
-<div id="appointment-popup" class="appointment-popup">
-    <a href="#" class="popup-backdrop" aria-label="Cerrar formulario"></a>
-    <div class="popup-card">
+    <div id="appointment-popup" class="appointment-popup">
+      <a href="#" class="popup-backdrop" aria-label="Cerrar formulario"></a>
+      <div class="popup-card">
         <a href="#" class="popup-close" aria-label="Cerrar">×</a>
         <h2 class="popup-title">AGENDA TU CITA</h2>
         <h3>con un asesor de ventas</h3>
         <p class="popup-copy">
-            Recibe atencion personalizada y resuelve todas tus dudas
-            sobre modelos, precios y disponibilidad.
+          Recibe atencion personalizada y resuelve todas tus dudas sobre
+          modelos, precios y disponibilidad.
         </p>
 
         <form class="popup-form">
-            <input type="text" class="text"  placeholder="Nombre completo">
-            <input type="text" class="text" placeholder="Celular">
-            <input type="email" placeholder="Correo">
-            <select>
-                <option selected>Modelo de Interes</option>
-                <option>Meyer</option>
-                <option>Axis</option>
-                <option>Nova</option>
-            </select>
-            <button type="submit">Agendar Cita</button>
+          <input type="text" class="text" placeholder="Nombre completo" />
+          <input type="text" class="text" placeholder="Celular" />
+          <input type="email" placeholder="Correo" />
+          <select>
+            <option selected>Modelo de Interes</option>
+            <option>Meyer</option>
+            <option>Axis</option>
+            <option>Nova</option>
+          </select>
+          <button type="submit">Agendar Cita</button>
         </form>
 
         <div class="popup-pattern"></div>
+      </div>
     </div>
-</div>
 
     <main class="content-grid">
-        <section class="text-side">
-            <p class="subtitle">• Berlin Puerta Poniente</p>
-            <h1>Y TU YA TIENES TU <span class="highlight">HAUS?</span></h1>
-            <a href="#appointment-popup" class="btn-main">AGENDAR CITA</a>
-            <p class="description">
-                <strong>Berlin Puerta Poniente</strong> es un proyecto habitacional moderno, diseñado para ofrecer una nueva forma de vivir: funcional, creativa y sustentable. Inspirado en la arquitectura contemporánea y pensado para las personas de hoy y de mañana.
-            </p>
-        </section>
+      <section class="text-side">
+        <p class="subtitle">• Berlin Puerta Poniente</p>
+        <h1>Y TU YA TIENES TU <span class="highlight">HAUS?</span></h1>
+        <a href="#appointment-popup" class="btn-main">AGENDAR CITA</a>
+        <p class="description">
+          <strong>Berlin Puerta Poniente</strong> es un proyecto habitacional
+          moderno, diseñado para ofrecer una nueva forma de vivir: funcional,
+          creativa y sustentable. Inspirado en la arquitectura contemporánea y
+          pensado para las personas de hoy y de mañana.
+        </p>
+      </section>
 
-        <section class="pattern-side"></section>
+      <section class="pattern-side"></section>
     </main>
-    
+
     <section class="model-section">
+      <div class="model-header">
+        <p class="model-sub">• Modelos</p>
 
-  <div class="model-header">
-    <p class="model-sub">• Modelos</p>
-
-    <div class="model-tabs">
-      <button class="tab">MEYER</button>
-      <span>|</span>
-      <button class="tab active">AXIS</button>
-      <span>|</span>
-      <button class="tab">NOVA</button>
-    </div>
-  </div>
-
-
-  <div class="model-carousel">
-
-    <button class="arrow left">&#10094;</button>
-
-    <div class="model-image-wrapper">
-
-      <img src="/images/car.jpg"
-      class="model-image"/>
-
-      <div class="model-stats">
-
-        <div class="stat green">
-          <div class="icon"><i class="fa-solid fa-house"></i></div>
-          <p>Terreno</p>
-          <h3>140m²</h3>
+        <div class="model-tabs">
+          <button class="tab">MEYER</button>
+          <span>|</span>
+          <button class="tab active">AXIS</button>
+          <span>|</span>
+          <button class="tab">NOVA</button>
         </div>
-
-        <div class="stat blue">
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brick-wall-icon lucide-brick-wall"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 9v6"/><path d="M16 15v6"/><path d="M16 3v6"/><path d="M3 15h18"/><path d="M3 9h18"/><path d="M8 15v6"/><path d="M8 3v6"/></svg>
-          </div>
-          <p>Construcción</p>
-          <h3>69m²</h3>
-        </div>
-
-        <div class="stat red">
-          <h2>2</h2>
-          <p>Recamaras</p>
-        </div>
-
-        <div class="stat yellow">
-          <h2>1</h2>
-          <p>baño, area de lavado</p>
-        </div>
-
       </div>
 
-    </div>
+      <div class="model-carousel">
+        <button class="arrow left">&#10094;</button>
 
-    <button class="arrow right">&#10095;</button>
+        <div class="model-image-wrapper">
+          <img src="/images/car.jpg" class="model-image" />
 
-  </div>
-
-  <div class="cta-area">
-    <a href="#appointment-popup" class="cta-btn">AGENDAR CITA</a>
-  </div>
-
-</section>
-
-<section class="edge-container">
-        <div class="divider"></div>
-        
-        <div class="edge-content">
-            <div class="edge-brand">
-               <img src="/images/ege.png" alt="Edge Logo" class="edge1-logo">
+          <div class="model-stats">
+            <div class="stat green">
+              <div class="icon"><i class="fa-solid fa-house"></i></div>
+              <p>Terreno</p>
+              <h3>140m²</h3>
             </div>
 
-            <div class="stat-box">
-            <div class="icon">
-<i class="fa-solid fa-droplet" style="color: #08873C;"></i>
-</div>
-                <div class="percentage">40%</div>
-                <div class="label">AHORRO DE AGUA</div>
+            <div class="stat blue">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-brick-wall-icon lucide-brick-wall"
+                >
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="M12 9v6" />
+                  <path d="M16 15v6" />
+                  <path d="M16 3v6" />
+                  <path d="M3 15h18" />
+                  <path d="M3 9h18" />
+                  <path d="M8 15v6" />
+                  <path d="M8 3v6" />
+                </svg>
+              </div>
+              <p>Construcción</p>
+              <h3>69m²</h3>
             </div>
 
-            <div class="stat-box">
-                <div class="icon energy-icon"><i class="fa-solid fa-bolt" style="color: #08873C;"></i></div>
-                <div class="percentage">20%</div>
-                <div class="label">AHORRO DE ENERGIA</div>
+            <div class="stat red">
+              <h2>2</h2>
+              <p>Recamaras</p>
             </div>
+
+            <div class="stat yellow">
+              <h2>1</h2>
+              <p>baño, area de lavado</p>
+            </div>
+          </div>
         </div>
 
-        <h2 class="edge-footer-text" style="color: #08873C;">HOGARES CON CERTIFICACION ECOLOGICA</h2>
-        
-        <div class="divider"></div>
-</section>
+        <button class="arrow right">&#10095;</button>
+      </div>
+
+      <div class="cta-area">
+        <a href="#appointment-popup" class="cta-btn">AGENDAR CITA</a>
+      </div>
+    </section>
+
+    <section class="edge-container">
+      <div class="divider"></div>
+
+      <div class="edge-content">
+        <div class="edge-brand">
+          <img src="/images/ege.png" alt="Edge Logo" class="edge1-logo" />
+        </div>
+
+        <div class="stat-box">
+          <div class="icon">
+            <i class="fa-solid fa-droplet" style="color: #08873c"></i>
+          </div>
+          <div class="percentage">40%</div>
+          <div class="label">AHORRO DE AGUA</div>
+        </div>
+
+        <div class="stat-box">
+          <div class="icon energy-icon">
+            <i class="fa-solid fa-bolt" style="color: #08873c"></i>
+          </div>
+          <div class="percentage">20%</div>
+          <div class="label">AHORRO DE ENERGIA</div>
+        </div>
+      </div>
+
+      <h2 class="edge-footer-text" style="color: #08873c">
+        HOGARES CON CERTIFICACION ECOLOGICA
+      </h2>
+
+      <div class="divider"></div>
+    </section>
 
     <section class="amenities-container">
-    <div class="header">
+      <div class="header">
         <span class="dot-title">Amenities</span>
         <p class="description">
-            Más que un lugar para vivir, Berlin es un entorno pensado para disfrutar cada día.<br>
-            Relájate, convive y comparte momentos únicos en un espacio creado para inspirar bienestar.
+          Más que un lugar para vivir, Berlin es un entorno pensado para
+          disfrutar cada día.<br />
+          Relájate, convive y comparte momentos únicos en un espacio creado para
+          inspirar bienestar.
         </p>
-    </div>
+      </div>
 
-    <div class="cards-wrapper">
+      <div class="cards-wrapper">
         <div class="card">
-            <div class="image-container">
-                <img src="/images/card1.jpg" alt="Gimnasio">
-            </div>
-            <div class="card-content">
-                <h3>Berlin</h3>
-                <p><span class="dot"></span>Gimnasio</p>
-            </div>
+          <div class="image-container">
+            <img src="/images/card1.jpg" alt="Gimnasio" />
+          </div>
+          <div class="card-content">
+            <h3>Berlin</h3>
+            <p><span class="dot"></span>Gimnasio</p>
+          </div>
         </div>
 
         <div class="card">
-            <div class="image-container">
-                <img src="/images/card2.jpg" alt="Cancha">
-            </div>
-            <div class="card-content">
-                <h3>Berlin</h3>
-                <p><span class="dot"></span>Cancha De Usos Multiples</p>
-            </div>
+          <div class="image-container">
+            <img src="/images/card2.jpg" alt="Cancha" />
+          </div>
+          <div class="card-content">
+            <h3>Berlin</h3>
+            <p><span class="dot"></span>Cancha De Usos Multiples</p>
+          </div>
         </div>
 
         <div class="card">
-            <div class="image-container">
-                <img src="/images/card3.jpg" alt="Dog Park">
-            </div>
-            <div class="card-content">
-                <h3>Berlin</h3>
-                <p><span class="dot"></span>Dog Park</p>
-            </div>
+          <div class="image-container">
+            <img src="/images/card3.jpg" alt="Dog Park" />
+          </div>
+          <div class="card-content">
+            <h3>Berlin</h3>
+            <p><span class="dot"></span>Dog Park</p>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="button-container">
+      <div class="button-container">
         <a href="#appointment-popup" class="btn-schedule">AGENDAR CITA</a>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="calculator-section">
-    <div class="container">
+    <section class="calculator-section">
+      <div class="container">
         <header class="calc-header">
-            <span class="dot-label">Calculadora</span>
-            <h1>Calcula tu financiamiento</h1>
-            <p>Descubre cuanto podrias pagar por tu nueva haus en segundos.</p>
+          <span class="dot-label">Calculadora</span>
+          <h1>Calcula tu financiamiento</h1>
+          <p>Descubre cuanto podrias pagar por tu nueva haus en segundos.</p>
         </header>
 
         <div class="calc-grid">
-            <div class="calc-inputs">
-                <div class="input-group">
-                    <label>Elige el Modelo de tu haus</label>
-                    <select>
-                        <option>Modelo</option>
-                    </select>
-                </div>
-
-                <div class="input-group">
-                    <label>Precio de Venta</label>
-                    <input type="text" placeholder="$1,000,000">
-                </div>
-
-                <div class="input-group">
-                    <label>Financiamiento</label>
-                    <div class="toggle-years">
-                        <button class="year-btn">20 Años</button>
-                        <button class="year-btn active">25 Años</button>
-                    </div>
-                </div>
-
-                <div class="preferential-box">
-                    <div class="box-text">
-                        <strong>Tasa Preferencial EDGE</strong>
-                        <small>Escenario pesimista EDGE - 9.75% anual</small>
-                    </div>
-                    <label class="switch">
-                        <input type="checkbox" checked>
-                        <span class="slider"></span>
-                    </label>
-                </div>
-
-                <div class="range-group">
-                    <label>Aforo Bancario (Max) 95%</label>
-                    <div class="range-value">50%</div>
-                    <input type="range" min="50" max="95" value="50">
-                    <div class="range-labels">
-                        <span>50%</span>
-                        <span>95%</span>
-                    </div>
-                </div>
+          <div class="calc-inputs">
+            <div class="input-group">
+              <label>Elige el Modelo de tu haus</label>
+              <select>
+                <option>Modelo</option>
+              </select>
             </div>
 
-            <div class="results-card">
-                <div class="result-item">
-                    <p>Mensualidad a pagar</p>
-                    <span class="amount">$20,000.00</span>
-                </div>
-                <div class="result-item">
-                    <p>Desembolso del Cliente</p>
-                    <span class="amount">$300,000.00</span>
-                </div>
-                <div class="result-item no-border">
-                    <p>Ingreso Minimo</p>
-                    <span class="amount">$50,000</span>
-                </div>
-
-                <div class="card-buttons">
-                    <button class="btn-clear">Limpiar</button>
-                    <button class="btn-interest">Me interesa</button>
-                </div>
+            <div class="input-group">
+              <label>Precio de Venta</label>
+              <input type="text" placeholder="$1,000,000" />
             </div>
-        </div>
 
-        <div class="footer-action  ">
-            <button class="btn-pdf">
-                <i>↓</i> Descargar Cotización PDF
-            </button>
-        </div>
-    </div>
-</section>
+            <div class="input-group">
+              <label>Financiamiento</label>
+              <div class="toggle-years">
+                <button class="year-btn">20 Años</button>
+                <button class="year-btn active">25 Años</button>
+              </div>
+            </div>
 
-<section class="location-section">
-    <div class="location-header">
-        <span class=""><span style="color: #0019FF;">•</span> Ubicación</span>
-    </div>
+            <div class="preferential-box">
+              <div class="box-text">
+                <strong>Tasa Preferencial EDGE</strong>
+                <small>Escenario pesimista EDGE - 9.75% anual</small>
+              </div>
+              <label class="switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
 
-    <div class="map-wrapper">
-        <div class="map-container">
-            <img src="/images/map.png" alt="Map Location" class="static-map">
-        </div>
-    </div>
-    
-    <div class="bottom-divider"></div>
-</section>
-
-
-<section class="contact-section">
-   <div class="content-card">
-       <div class="contact-header">
-          <div class="contact-brand">
-           <img src="/images/BERLIN-LOGO.png"  alt="Contact Icon" class="contact-icon">
+            <div class="range-group">
+              <label>Aforo Bancario (Max) 95%</label>
+              <div class="range-value">50%</div>
+              <input type="range" min="50" max="95" value="50" />
+              <div class="range-labels">
+                <span>50%</span>
+                <span>95%</span>
+              </div>
+            </div>
           </div>
-           <h2>PONTE EN CONTACTO CON UN ASESOR</h2>
-           <p>Estamos aquí para ayudarte a resolver tus dudas, escuchar tus sugerencias o brindarte más información sobre nuestros servicios. Llámanos, escríbenos o visítanos; estaremos encantados de atenderte. Tu mensaje es importante para nosotros, ¡esperamos saber de ti pronto!</p>
-       </div>
-   
-       <div class="contact-form-card">
-           <form class="contact-grid">
-               <input type="text" placeholder="Nombre" class="col-half">
-               <input type="text" placeholder="Apellido" class="col-half">
-               
-               <input type="email" placeholder="Correo Electronico" class="col-full">
-               
-               <input type="tel" placeholder="Numero de telefono" class="col-full">
-               
-               <select class="col-full">
-                   <option value="" disabled selected>Modelo de Interes</option>
-                   <option value="meyer">Meyer</option>
-                   <option value="axis">Axis</option>
-                   <option value="nova">Nova</option>
-               </select>
-   
-               <button type="submit" class="btn-submit">Agendar Cita</button>
-           </form>
-       </div>
-   </div>
-</section>
 
-<footer class="footer-outer">
-    <div class="footer-inner-card">
-        
+          <div class="results-card">
+            <div class="result-item">
+              <p>Mensualidad a pagar</p>
+              <span class="amount">$20,000.00</span>
+            </div>
+            <div class="result-item">
+              <p>Desembolso del Cliente</p>
+              <span class="amount">$300,000.00</span>
+            </div>
+            <div class="result-item no-border">
+              <p>Ingreso Minimo</p>
+              <span class="amount">$50,000</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn-clear">Limpiar</button>
+              <button class="btn-interest">Me interesa</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-action">
+          <button class="btn-pdf"><i>↓</i> Descargar Cotización PDF</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-section">
+      <div class="location-header">
+        <span class=""><span style="color: #0019ff">•</span> Ubicación</span>
+      </div>
+
+      <div class="map-wrapper">
+        <div class="map-container">
+          <img src="/images/map.png" alt="Map Location" class="static-map" />
+        </div>
+      </div>
+
+      <div class="bottom-divider"></div>
+    </section>
+
+    <section class="contact-section">
+      <div class="content-card">
+        <div class="contact-header">
+          <div class="contact-brand">
+            <img
+              src="/images/BERLIN-LOGO.png"
+              alt="Contact Icon"
+              class="contact-icon"
+            />
+          </div>
+          <h2>PONTE EN CONTACTO CON UN ASESOR</h2>
+          <p>
+            Estamos aquí para ayudarte a resolver tus dudas, escuchar tus
+            sugerencias o brindarte más información sobre nuestros servicios.
+            Llámanos, escríbenos o visítanos; estaremos encantados de atenderte.
+            Tu mensaje es importante para nosotros, ¡esperamos saber de ti
+            pronto!
+          </p>
+        </div>
+
+        <div class="contact-form-card">
+          <form class="contact-grid">
+            <input type="text" placeholder="Nombre" class="col-half" />
+            <input type="text" placeholder="Apellido" class="col-half" />
+
+            <input
+              type="email"
+              placeholder="Correo Electronico"
+              class="col-full"
+            />
+
+            <input
+              type="tel"
+              placeholder="Numero de telefono"
+              class="col-full"
+            />
+
+            <select class="col-full">
+              <option value="" disabled selected>Modelo de Interes</option>
+              <option value="meyer">Meyer</option>
+              <option value="axis">Axis</option>
+              <option value="nova">Nova</option>
+            </select>
+
+            <button type="submit" class="btn-submit">Agendar Cita</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-outer">
+      <div class="footer-inner-card">
         <div class="footer-cta">
-            <h1>Y TU   YA TIENES<br>TU HAUS?   <a href="#appointment-popup" class="btn-blue-pill">AGENDAR CITA</a></h1>
-          
+          <h1>
+            Y TU YA TIENES<br />TU HAUS?
+            <a href="#appointment-popup" class="btn-blue-pill">AGENDAR CITA</a>
+          </h1>
         </div>
 
         <div class="footer-info-grid">
-            <div class="info-col">
-                <h3>Contacto</h3>
-                <a href="mailto:hola@tuhausberlin.mx">hola@tuhausberlin.mx</a>
-                <a href="tel:6862477521">(686) 247 7521</a>
-            </div>
+          <div class="info-col">
+            <h3>Contacto</h3>
+            <a href="mailto:hola@tuhausberlin.mx">hola@tuhausberlin.mx</a>
+            <a href="tel:6862477521">(686) 247 7521</a>
+          </div>
 
-            <div class="info-col">
-                <h3>Dirección</h3>
-                <p>Blvd. Lázaro Cárdenas<br>Puerta Poniente, Mexicali, B.C.</p>
-                <a href="#appointment-popup" class="small-link">Agenda tu cita</a>
-            </div>
+          <div class="info-col">
+            <h3>Dirección</h3>
+            <p>Blvd. Lázaro Cárdenas<br />Puerta Poniente, Mexicali, B.C.</p>
+            <a href="#appointment-popup" class="small-link">Agenda tu cita</a>
+          </div>
 
-            <div class="info-col">
-                <h3>Redes Sociales</h3>
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <div class="edge-logo-footer">
-                    <img src="/images/footerlogo.png" alt="Edge Logo" class="edge-logo">
-                </div>
+          <div class="info-col">
+            <h3>Redes Sociales</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <div class="edge-logo-footer">
+              <img
+                src="/images/footerlogo.png"
+                alt="Edge Logo"
+                class="edge-logo"
+              />
             </div>
+          </div>
         </div>
 
         <div class="footer-bottom">
-            <span>©2025</span>
-            <span>Creado por ALTITUD3</span>
+          <span>©2025</span>
+          <span>Creado por ALTITUD3</span>
         </div>
-    </div>
-</footer>
-
-</body>
-<script src="/index.js"></script>
+      </div>
+    </footer>
+  </body>
+  <script src="/index.js"></script>
 </html>
