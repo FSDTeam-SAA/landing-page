@@ -1880,7 +1880,11 @@ input::placeholder {
 /* Mobile Optimization */
 @media (max-width: 768px) {
     .footer-cta { flex-direction: column; align-items: flex-start; }
-    .footer-cta h1 { font-size: 40px; }
+    .footer-cta h1 { font-size: 30px; display: flex; align-items: center; gap: 15px; flex-direction: column; }
     .footer-info-grid { grid-template-columns: 1fr; }
     .footer-inner-card { padding: 40px 30px; border-radius: 30px; }
+    .btn-blue-pill {
+        width: 100%;
+        text-align: center;
+    }
 }
