@@ -256,7 +256,7 @@
       </div>
     </section>
 
-    <section class="calculator-section">
+    <!-- <section class="calculator-section">
       <div class="container">
         <header class="calc-header">
           <span class="dot-label">Calculadora</span>
@@ -331,6 +331,100 @@
 
         <div class="footer-action">
           <button class="btn-pdf"><i>↓</i> Descargar Cotización PDF</button>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="calculator-section">
+      <div class="container">
+        <header class="calc-header">
+          <span class="dot-label">Calculadora</span>
+          <h1>Calcula tu financiamiento</h1>
+          <p>Descubre cuanto podrias pagar por tu nueva haus en segundos.</p>
+        </header>
+
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <div class="input-group">
+              <label>Elige el Modelo de tu haus</label>
+              <select id="modelSelect">
+                <option value="1000000">MEYER  $100,0000</option>
+                <option value="2000000">AXIS  $2,000,000</option>
+                <option value="3000000">NOVA  $3,000,000</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label>Precio de Venta</label>
+              <input type="text" id="salePrice" placeholder="$1,000,000" />
+            </div>
+
+            <div class="input-group">
+              <label>Financiamiento</label>
+              <div class="toggle-years">
+                <button class="year-btn" data-years="20" type="button">
+                  20 Años
+                </button>
+                <button class="year-btn active" data-years="25" type="button">
+                  25 Años
+                </button>
+              </div>
+            </div>
+
+            <div class="preferential-box">
+              <div class="box-text">
+                <strong>Tasa Preferencial EDGE</strong>
+                <small id="rateLabel"
+                  >Escenario pesimista EDGE - 9.75% anual</small
+                >
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="edgeRate" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="range-group">
+              <label
+                >Aforo Bancario (Max)
+                <span id="bankPercentText">50%</span></label
+              >
+              <div class="range-value" id="rangeValue">5%</div>
+              <input type="range" id="bankRange" min="5" max="95" value="5" />
+              <div class="range-labels">
+                <span>5%</span>
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="results-card">
+            <div class="result-item">
+              <p>Mensualidad a pagar</p>
+              <span class="amount" id="monthlyPayment">$0.00</span>
+            </div>
+            <div class="result-item">
+              <p>Desembolso del Cliente</p>
+              <span class="amount" id="clientDownPayment">$0.00</span>
+            </div>
+            <div class="result-item no-border">
+              <p>Ingreso Minimo</p>
+              <span class="amount" id="minimumIncome">$0.00</span>
+            </div>
+
+            <div class="card-buttons">
+              <button class="btn-clear" id="clearBtn" type="button">
+                Limpiar
+              </button>
+              <button class="btn-interest" type="button">Me interesa</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-action">
+          <button class="btn-pdf" type="button">
+            <i>↓</i> Descargar Cotización PDF
+          </button>
         </div>
       </div>
     </section>
